@@ -1,0 +1,3 @@
+com\aifinance\service\CsvParserServiceTest.class
+com\aifinance\service\RuleMatchingServiceTest.class
+com\aifinance\security\JwtTokenProviderTest.class
