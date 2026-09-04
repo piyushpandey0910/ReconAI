@@ -1,138 +1,94 @@
-# ==============================
+# ================================
 # Environment & Secrets
-# ==============================
+# ================================
 .env
 .env.*
-!.env.example
 *.env
 *.env.txt
-secrets/
+*.secret
 *.key
 *.pem
 
-# ==============================
+# ================================
 # Java / Maven / Spring Boot
-# ==============================
+# ================================
 target/
 *.class
 *.jar
 *.war
 *.ear
 *.log
-hs_err_pid*
 
-# Spring / local configuration
-application-local.properties
-application-local.yml
-application-local.yaml
-
-# ==============================
-# Python
-# ==============================
+# ================================
+# Python / FastAPI
+# ================================
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-
-venv/
+*.pyo
 .venv/
+venv/
 env/
 ENV/
-env.bak/
-venv.bak/
-
 .pytest_cache/
 .mypy_cache/
-.ruff_cache/
-.coverage
-.coverage.*
-htmlcov/
-.pyre/
 
-# ==============================
-# Node / React / Vite
-# ==============================
+# ================================
+# Node.js / React / Vite
+# ================================
 node_modules/
 dist/
-build/
 .vite/
-.cache/
-.parcel-cache/
-
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# ==============================
-# IDEs / Editors
-# ==============================
+# ================================
+# IDE
+# ================================
 .idea/
 *.iml
 .vscode/
-*.code-workspace
-.project
-.classpath
-.settings/
+*.swp
+*.swo
 
-# ==============================
-# OS Files
-# ==============================
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# ==============================
-# Database / Local Runtime Data
-# ==============================
+# ================================
+# Database / Local Runtime Files
+# ================================
 *.db
 *.sqlite
 *.sqlite3
 *.mv.db
 *.trace.db
 
-# ==============================
-# Generated / Temporary Files
-# ==============================
-tmp/
-temp/
+# ================================
+# OS Generated Files
+# ================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ================================
+# Build / Temporary Files
+# ================================
 *.tmp
 *.temp
-*.swp
-*.swo
+*.bak
 
-# ==============================
-# Reports / Generated Exports
-# ==============================
+# ================================
+# Generated Reports / Exports
+# ================================
 reports/
 exports/
-generated/
-*.xlsx
-*.xls
-*.pdf
 
-# ==============================
-# Local Uploaded Data
-# ==============================
+# ================================
+# Uploaded Runtime Files
+# ================================
 uploads/
-data/uploads/
-data/generated/
 
-# Keep synthetic sample CSVs if intentionally committed.
-# Add individual private datasets below if needed.
-# *.csv
-
-# ==============================
-# Frontend Environment Files
-# ==============================
-frontend/.env
-frontend/.env.*
-!frontend/.env.example
-
-# ==============================
-# AI Service Environment Files
-# ==============================
-ai-service/.env
-ai-service/.env.*
-!ai-service/.env.example
+# ================================
+# Coverage
+# ================================
+coverage/
+htmlcov/
+.coverage
