@@ -149,7 +149,7 @@ export const AuditModal: React.FC<AuditModalProps> = ({ record, onClose }) => {
                 <div className="space-y-1 text-xs font-mono">
                   <div className="text-slate-400">Txn: <span className="text-slate-200">{record.gatewayTxnId || 'N/A'}</span></div>
                   <div className="text-slate-400">Order: <span className="text-slate-200">{record.gatewayOrderId || 'N/A'}</span></div>
-                  <div className="text-slate-400">Amount: <span className="text-emerald-400 font-bold">₹{record.gatewayAmount || '0.00'}</span></div>
+                  <div className="text-slate-400">Amount: <span className="text-emerald-400 font-bold">${record.gatewayAmount || '0.00'}</span></div>
                   <div className="text-slate-400 truncate">Customer: <span className="text-slate-300">{record.gatewayCustomerEmail || 'N/A'}</span></div>
                 </div>
               </div>
@@ -161,8 +161,8 @@ export const AuditModal: React.FC<AuditModalProps> = ({ record, onClose }) => {
                 </span>
                 <div className="space-y-1 text-xs font-mono">
                   <div className="text-slate-400">Bank Ref: <span className="text-slate-200">{record.bankRefId || 'UNMATCHED'}</span></div>
-                  <div className="text-slate-400">Amount: <span className="text-emerald-400 font-bold">{record.bankAmount ? `₹${record.bankAmount}` : 'N/A'}</span></div>
-                  <div className="text-slate-400">Bank Fee: <span className="text-amber-400">₹{record.bankFee || '0.00'}</span></div>
+                  <div className="text-slate-400">Amount: <span className="text-emerald-400 font-bold">{record.bankAmount ? `$${record.bankAmount}` : 'N/A'}</span></div>
+                  <div className="text-slate-400">Bank Fee: <span className="text-amber-400">${record.bankFee || '0.00'}</span></div>
                   <div className="text-slate-400 truncate">Narration: <span className="text-slate-300">{record.bankNarration || 'N/A'}</span></div>
                 </div>
               </div>
@@ -175,7 +175,7 @@ export const AuditModal: React.FC<AuditModalProps> = ({ record, onClose }) => {
                 <div className="space-y-1 text-xs font-mono">
                   <div className="text-slate-400">Entry ID: <span className="text-slate-200">{record.ledgerEntryId || 'UNMATCHED'}</span></div>
                   <div className="text-slate-400">Internal Ref: <span className="text-slate-200">{record.ledgerInternalRef || 'N/A'}</span></div>
-                  <div className="text-slate-400">Amount: <span className="text-emerald-400 font-bold">{record.ledgerAmount ? `₹${record.ledgerAmount}` : 'N/A'}</span></div>
+                  <div className="text-slate-400">Amount: <span className="text-emerald-400 font-bold">{record.ledgerAmount ? `$${record.ledgerAmount}` : 'N/A'}</span></div>
                   <div className="text-slate-400 truncate">Desc: <span className="text-slate-300">{record.ledgerDescription || 'N/A'}</span></div>
                 </div>
               </div>
