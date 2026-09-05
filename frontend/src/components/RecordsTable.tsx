@@ -155,7 +155,7 @@ export const RecordsTable: React.FC<RecordsTableProps> = ({
                       {r.gatewayOrderId || '—'}
                     </td>
                     <td className="py-3 px-4 font-mono font-bold text-white text-right">
-                      ${r.gatewayAmount ? r.gatewayAmount.toFixed(2) : '0.00'}
+                      ₹{r.gatewayAmount ? r.gatewayAmount.toFixed(2) : '0.00'}
                     </td>
                     <td className="py-3 px-4 max-w-xs truncate">
                       {r.bankRefId ? (
@@ -222,7 +222,7 @@ export const RecordsTable: React.FC<RecordsTableProps> = ({
               <span>Manual Review Override</span>
             </h3>
             <p className="text-xs text-slate-400 font-mono">
-              Transaction: {overrideModalRecord.gatewayTxnId} (${overrideModalRecord.gatewayAmount})
+              Transaction: {overrideModalRecord.gatewayTxnId} (₹{overrideModalRecord.gatewayAmount})
             </p>
             <div>
               <label className="text-xs text-slate-300 block mb-1">Analyst Justification / Audit Note</label>
