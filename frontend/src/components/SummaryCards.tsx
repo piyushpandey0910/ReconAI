@@ -19,7 +19,7 @@ export const SummaryCards: React.FC<SummaryCardsProps> = ({ metrics, loading }) 
   }
 
   const formatCurrency = (val?: number) => {
-    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(val || 0);
+    return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(val || 0);
   };
 
   return (
